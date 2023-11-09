@@ -1,0 +1,73 @@
+* { /* RESET DO CSS*/
+    padding: 0;
+    margin: 0;
+}
+
+p {
+    font-size: 20px;
+    margin-top: 10px;
+}
+
+h1 {
+    margin-top: 1rem;
+}
+
+.formulario:hover {
+    background-color: rgb(231, 231, 231);
+}
+
+.formulario__texto:active {
+    font-size: 30px;
+}
+
+a:visited {
+    color: rgb(97, 97, 97);
+}
+
+.form__list li:first-child { /* primeiro item filho do código*/
+    color: blueviolet;
+}
+
+.form__list li:last-child { /* último item filho do código*/
+    color: red;
+}
+
+.form__list2 {
+    margin: 1rem;
+    line-height: 30px;
+}
+
+.formulario-info__pessoal input[type="email"]:required {
+    background-color: red;
+}
+
+.formulario-info__pessoal input[type="radio"]:checked + label {
+    font-size: 40px;
+    background-color: green;
+}
+
+.formulario-info__pessoal input[type="checkbox"]:checked + label {
+    font-size: 40px;
+    background-color: yellow;
+}
+
+.formulario-info__pessoal input[type="text"]::placeholder {
+    color: violet;
+}
+
+.article2 {
+    background-color: rgb(241, 241, 241);
+}
+
+.article2__itens::first-line {
+    color: red;
+}
+
+.article2__itens::selection {
+    color: green;
+}
+
+.article2__itens::first-letter {
+    color: blue;
+}
+
