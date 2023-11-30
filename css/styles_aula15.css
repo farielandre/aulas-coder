@@ -1,0 +1,85 @@
+* {
+    /* RESET DO CSS*/
+    padding: 0;
+    margin: 0;
+}
+
+/* EXERCICIO AULA */
+
+/* Mobile */
+
+.container {
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr;
+    grid-template-rows: 50px 50px 50px 50px 50px 50px;
+    grid-template-areas:
+        "header"
+        "content"
+        "signUp"
+        "feature1"
+        "feature2"
+        "feature3";
+}
+
+header {
+    grid-area: header;
+    background-color: rgb(43, 153, 226);
+}
+
+#content {
+    grid-area: content;
+    background-color: rgb(178, 209, 228);
+}
+
+#signUp {
+    grid-area: signUp;
+    background-color: rgb(103, 157, 190);
+}
+
+#feature1 {
+    grid-area: feature1;
+    background-color: orange;
+}
+
+#feature2 {
+    grid-area: feature2;
+    background-color: rgb(218, 102, 102);
+}
+
+#feature3 {
+    grid-area: feature3;
+    background-color: rgb(177, 130, 238);
+}
+
+
+
+/*Tablet*/
+
+@media screen and (min-width: 700px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        grid-template-areas:
+            "header header"
+            "content content"
+            "signUp feature1"
+            "feature2 feature3";
+    }
+}
+
+/*Desktop*/
+
+@media screen and (min-width: 900px) {
+    .container {
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: 50px 50px 50px 50px 50px 50px;
+        grid-template-areas:
+            "header header header"
+            "feature1 feature3 feature2"
+            "signUp signUp signUp"
+            "content content content";
+    }
+}
